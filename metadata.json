@@ -1,0 +1,6 @@
+{
+  "name": "BA Wines and Spirits",
+  "description": "Rio's POS system for BA Wines and Spirits",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

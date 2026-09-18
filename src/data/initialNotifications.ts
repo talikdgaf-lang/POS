@@ -1,0 +1,47 @@
+import { ManagerNotification } from '../types';
+
+export const INITIAL_NOTIFICATIONS: ManagerNotification[] = [
+  {
+    id: 'notif-1',
+    type: 'OUT_OF_STOCK',
+    title: 'Kenya Cane Depleted',
+    message: 'Kenya Cane (250ml) has reached 0 remaining bottles. Stock replenishment required immediately.',
+    timestamp: '09:42 AM',
+    date: 'Today',
+    read: false,
+    relatedItemId: 'kenya-cane',
+    severity: 'critical',
+  },
+  {
+    id: 'notif-2',
+    type: 'OUT_OF_STOCK',
+    title: 'Stoney Tangawizi Depleted',
+    message: 'Stoney Tangawizi (350ml) has reached 0 remaining bottles. Bar stock is empty.',
+    timestamp: '09:15 AM',
+    date: 'Today',
+    read: false,
+    relatedItemId: 'stoney-tangawizi',
+    severity: 'critical',
+  },
+  {
+    id: 'notif-3',
+    type: 'LOW_STOCK',
+    title: 'Low Stock: Gilbey\'s Special Dry Gin',
+    message: 'Gilbey\'s Gin (750ml) has only 1 bottle remaining in shelf inventory.',
+    timestamp: '08:50 AM',
+    date: 'Today',
+    read: false,
+    relatedItemId: 'gilbeys-gin',
+    severity: 'warning',
+  },
+  {
+    id: 'notif-4',
+    type: 'SYSTEM',
+    title: 'POS Shift Initialized',
+    message: 'Shift opened and real-time inventory synchronization is active.',
+    timestamp: '08:00 AM',
+    date: 'Today',
+    read: true,
+    severity: 'info',
+  },
+];
